@@ -7083,7 +7083,7 @@
                 "php": "^8.2.0"
             },
             "require-dev": {
-                "laravel/dusk": "^8.2.13|dev-develop",
+
                 "orchestra/testbench": "^9.9.0|^10.2.1",
                 "pestphp/pest-dev-tools": "^3.4.0"
             },
