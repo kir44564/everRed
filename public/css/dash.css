@@ -25,7 +25,6 @@
     border-collapse: collapse;
     background: #0000;
     color: var(--color);
-    overflow-x:auto;
   }
   input {
     color: var(--color);
@@ -202,27 +201,6 @@
     pointer-events: none;
     z-index: -1;
   }
-
-  .bear-link {
-    color: canvasText;
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    width: 48px;
-    aspect-ratio: 1;
-    display: grid;
-    place-items: center;
-    opacity: 0.8;
-  }
-
-  :where(.x-link, .bear-link):is(:hover, :focus-visible) {
-    opacity: 1;
-  }
-
-  .bear-link svg {
-    width: 75%;
-  }
-
   /* Utilities */
   .sr-only {
     position: absolute;
