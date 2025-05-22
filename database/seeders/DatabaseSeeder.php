@@ -21,6 +21,6 @@ class DatabaseSeeder extends Seeder
             'password' => 'admin',
         ]);
 
-        User::factory()->count(30)->create();
+        User::factory()->count(10)->create();
     }
 }

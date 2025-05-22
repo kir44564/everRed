@@ -29,19 +29,6 @@
   input {
     color: var(--color);
   }
-  table:focus-within tbody tr:not(:focus-within) {
-    filter: blur(4px) saturate(0.2);
-    pointer-events: none;
-    opacity: 0.5;
-    
-  }
-  tr:focus-within {
-    background: var(--selected);
-    td,
-    input {
-      color: canvasText;
-    }
-  }
   thead {
     background: var(--head);
   }
@@ -55,16 +42,6 @@
   td {
     font-weight: 300;
   }
-  tr {
-    transition-property: filter, background, opacity;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-out;
-
-    &:not(:last-of-type) {
-      border-bottom: 1px solid var(--head);
-    }
-  }
-
   table :is(td, th) {
     white-space: nowrap;
     font-weight: 400;
@@ -81,10 +58,6 @@
 
   td:not(:has(input)) {
     padding: 0.5rem 1rem;
-  }
-
-  tr:focus-within input:hover:not(:focus-visible) {
-    background: color-mix(in oklch, var(--accent), #0000 75%);
   }
 
   table input {
@@ -220,6 +193,7 @@ h1 {
   font-size: 1.25rem;
   position: relative;
   bottom: 60px;
+  margin-top: 50px;
   right: 1rem;
   font-family: monospace;
   opacity: .5;

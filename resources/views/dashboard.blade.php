@@ -5,7 +5,7 @@
 @endauth
 
 <link rel="stylesheet" href="{{ asset('/css/dash.css') }}">
-<link rel="stylesheet" href="{{ asset('/js/dash.js') }}">
+
 
 
 <div class="members">
