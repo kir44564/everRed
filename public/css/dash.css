@@ -154,7 +154,8 @@
   }
 
   body::before {
-    --size: 45px;
+    /*--size: 45px;*/
+    --size: clamp(20px, 8vw, 45px);
     --line: color-mix(in hsl, canvasText, transparent 80%);
     content: '';
     height: 100vh;
@@ -203,4 +204,40 @@ h1 {
   overflow: scroll;
   max-width: 100%;
   max-height: 400px;
+}
+
+/* ===== RESPONSIVE TABLE ===== */
+@media (max-width: 768px) {
+  table, thead, tbody, tr, td { display: block; }
+  thead { display: none; }
+  td { 
+    padding-left: 50%; 
+    border: none !important;
+  }
+  td:before {
+    content: attr(data-label);
+    position: center;
+    left: 1rem;
+    font-weight: bold;
+  }
+}
+
+/* ===== MOBILE-FRIENDLY CONTROLS ===== */
+@media (max-width: 600px) {
+  .tp-dfwv { 
+    width: 90% !important; 
+    max-width: 100%;
+    left: 0 !important;
+    right: 0 !important;
+  }
+}
+
+/* ===== TOUCH TARGETS ===== */
+button {
+  min-height: 44px; /* Apple’s minimum tap size */
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) or (max-width: 768px) {
+  tr { transition: none !important; }
 }
