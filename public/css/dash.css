@@ -25,6 +25,7 @@
     border-collapse: collapse;
     background: #0000;
     color: var(--color);
+    overflow-x:auto;
   }
   input {
     color: var(--color);
@@ -33,6 +34,7 @@
     filter: blur(4px) saturate(0.2);
     pointer-events: none;
     opacity: 0.5;
+    
   }
   tr:focus-within {
     background: var(--selected);
@@ -243,4 +245,10 @@ h1 {
   right: 1rem;
   font-family: monospace;
   opacity: .5;
+}
+
+.table-scroll {
+  overflow: scroll;
+  max-width: 100%;
+  max-height: 400px;
 }

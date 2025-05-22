@@ -1,3 +1,5 @@
+
+
 @auth
 <h1>{{ Auth::user()->name }}, welcome to your Dashboard</h1>
 @endauth
@@ -7,6 +9,8 @@
 
 
 <div class="members">
+<div class="table-responsive">
+  <div class="table-scroll">
       <table role="grid">
         <thead>
           <tr>
@@ -40,6 +44,8 @@
         </tbody>
       </table>
     </div>
+  </div>
+</div>
 
 <a>
     <svg
