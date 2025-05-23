@@ -206,7 +206,7 @@ h1 {
   max-height: 400px;
 }
 
-/* ===== RESPONSIVE TABLE ===== */
+/* table responsive */
 @media (max-width: 768px) {
   table, thead, tbody, tr, td { display: block; }
   thead { display: none; }
@@ -222,7 +222,7 @@ h1 {
   }
 }
 
-/* ===== MOBILE-FRIENDLY CONTROLS ===== */
+/* mobile controls */
 @media (max-width: 600px) {
   .tp-dfwv { 
     width: 90% !important; 
@@ -232,12 +232,12 @@ h1 {
   }
 }
 
-/* ===== TOUCH TARGETS ===== */
+/* touch targets */
 button {
   min-height: 44px; /* Apple’s minimum tap size */
 }
 
-/* ===== REDUCED MOTION ===== */
+/* reduced motion */
 @media (prefers-reduced-motion: reduce) or (max-width: 768px) {
   tr { transition: none !important; }
 }
